@@ -1,0 +1,135 @@
+/* =============================================================================
+   Monolith — layout styling
+   All five style-guide layouts live here so decks never need custom layout CSS.
+   ========================================================================== */
+
+/* ------- cover -------------------------------------------------------------
+   Title slide, section breaks, mood/transition moments.
+   Full-bleed photo (via `background:` frontmatter) + scrim + one line.
+   Text is always light because it sits over a photo. */
+.slidev-layout.mono-cover {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* The photo lives on its own layer so `grayscale` filters only the image. */
+.slidev-layout.mono-cover .mono-cover__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+/* Scrim so light titles stay readable over any photo. */
+.slidev-layout.mono-cover .mono-cover__scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(var(--scrim), var(--scrim));
+  z-index: 0;
+}
+
+.slidev-layout.mono-cover .mono-cover__content {
+  position: relative;
+  z-index: 1;
+  max-width: 60rem;
+}
+
+.slidev-layout.mono-cover h1 {
+  color: #fff;
+  font-size: 4rem;
+}
+
+.slidev-layout.mono-cover h2 {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.slidev-layout.mono-cover p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.slidev-layout.mono-cover .kicker {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Optional desaturation unifier for mixed-source photos: `class: grayscale`. */
+.slidev-layout.mono-cover.grayscale .mono-cover__bg {
+  filter: grayscale(1);
+}
+
+/* ------- statement ---------------------------------------------------------
+   One punchy claim: 3–6 words, centered, nothing else. */
+.slidev-layout.mono-statement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 3rem 4rem;
+}
+
+.slidev-layout.mono-statement h1 {
+  font-size: 4.25rem;
+  margin: 0;
+}
+
+.slidev-layout.mono-statement .kicker {
+  margin-bottom: 1rem;
+}
+
+/* ------- center ------------------------------------------------------------
+   Lists, steps, structured info, a data/diagram slide.
+   Content is centered as a block; inner structure may left-align. */
+.slidev-layout.mono-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.slidev-layout.mono-center > * {
+  max-width: 56rem;
+}
+
+/* ------- image-left / image-right -----------------------------------------
+   A concept anchored to a photo. Photo one side (full-bleed, full-height),
+   ≤4 short lines the other side, vertically centered. Alternate L/R. */
+.slidev-layout.mono-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.slidev-layout.mono-split .mono-split__media {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.slidev-layout.mono-split .mono-split__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3.5rem 3rem;
+  min-width: 0;
+}
+
+/* Optional desaturation unifier: add `class: grayscale`. */
+.slidev-layout.mono-split.grayscale .mono-split__media {
+  filter: grayscale(1);
+}

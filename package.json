@@ -1,0 +1,30 @@
+{
+  "name": "slidev-theme-narrative",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A monochrome, one-accent, photography-forward Slidev theme. Dark or light mode and the accent colour are configurable inputs — choose mode + accent, write content, done.",
+  "keywords": [
+    "slidev-theme",
+    "slidev",
+    "monochrome",
+    "minimal",
+    "editorial"
+  ],
+  "license": "MIT",
+  "engines": {
+    "slidev": ">=0.48.0"
+  },
+  "slidev": {
+    "defaults": {
+      "colorSchema": "dark",
+      "aspectRatio": "16/9",
+      "themeConfig": {
+        "accent": "#E5484D"
+      }
+    }
+  },
+  "dependencies": {
+    "@fontsource/fira-code": "^5.3.0",
+    "@fontsource/inter": "^5.3.0"
+  }
+}
