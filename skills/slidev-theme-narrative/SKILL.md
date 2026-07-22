@@ -72,6 +72,7 @@ graphic. Visual interest comes from photography or from restraint — never from
 ornament layered behind the content.
 
 **It is not:**
+
 - **Dense, text-heavy, dated slides** — bullet lists stacked to the edges, small
   type, no imagery. This is the main failure mode to avoid.
 - **Fully illustrated, heavily art-directed decks** — the kind that look
@@ -99,11 +100,11 @@ fallback. The exact color values each mode resolves to are in the README.
 Exactly **one** accent per deck. Good defaults, each chosen to read well on
 *both* dark and light backgrounds:
 
-| Accent | Primary   | Alternative (more energy) | Feel                          |
-| ------ | --------- | ------------------------- | ----------------------------- |
-| Red    | `#E5484D` | `#EE0000`                 | warm, urgent, confident       |
-| Blue   | `#3B82F6` | `#0070F3`                 | calm, technical, trustworthy  |
-| Green  | `#30A46C` | `#22C55E`                 | fresh, growth, approachable   |
+| Accent | Primary   | Alternative (more energy) | Feel                         |
+|--------|-----------|---------------------------|------------------------------|
+| Red    | `#E5484D` | `#EE0000`                 | warm, urgent, confident      |
+| Blue   | `#3B82F6` | `#0070F3`                 | calm, technical, trustworthy |
+| Green  | `#30A46C` | `#22C55E`                 | fresh, growth, approachable  |
 
 If the user doesn't care, pick one that fits the topic and say which you chose.
 Any other single hue is fine too — the rule is "one accent, used the same
@@ -116,7 +117,7 @@ restrained way," not "one of these three."
 - Accent is for *emphasis and identity*, never for large fills or body text.
 - The accent is chosen once and used consistently across the whole deck.
 
-In markdown, the theme wires accent to `**bold**` (accent word), `<u>underline</u>`
+In Markdown, the theme wires accent to `**bold**` (accent word), `<u>underline</u>`
 (accent underline), and links. Reach for those rather than custom styling.
 
 ---
@@ -141,13 +142,13 @@ you don't set sizes per slide. The authoring discipline on top of it:
 These cover ~95% of any talk, and they are all standard theme layouts — no
 custom layouts required. Reach for anything else only for a genuine one-off.
 
-| Layout        | Use it for…                                          | Content rule                            |
-| ------------- | ---------------------------------------------------- | --------------------------------------- |
-| `cover`       | Title slide, section breaks, mood/transition moments | Full-bleed `background:` photo + 1 line |
-| `statement`   | One punchy claim                                     | 3–6 words, centered, nothing else       |
-| `image-left`  | A concept anchored to a photo                        | Photo left, ≤4 short lines right        |
-| `image-right` | Same, mirrored — alternate L/R so it isn't mechanical| Photo right, ≤4 short lines left         |
-| `center`      | Lists, steps, structured info, a data/diagram slide  | Short title + a tight structure         |
+| Layout        | Use it for…                                           | Content rule                            |
+|---------------|-------------------------------------------------------|-----------------------------------------|
+| `cover`       | Title slide, section breaks, mood/transition moments  | Full-bleed `background:` photo + 1 line |
+| `statement`   | One punchy claim                                      | 3–6 words, centered, nothing else       |
+| `image-left`  | A concept anchored to a photo                         | Photo left, ≤4 short lines right        |
+| `image-right` | Same, mirrored — alternate L/R so it isn't mechanical | Photo right, ≤4 short lines left        |
+| `center`      | Lists, steps, structured info, a data/diagram slide   | Short title + a tight structure         |
 
 **Rhythm matters as much as the layouts.** Alternate *breath* (cover /
 statement — almost no text) with *substance* (center / image slides). A run of
@@ -218,6 +219,7 @@ The same discipline applies to everything custom:
 ## 8. Checklists
 
 **Per deck**
+
 - [ ] Mode (dark/light) and one accent chosen up front
 - [ ] Local-first decision confirmed for the venue
 - [ ] Images sourced (Unsplash by default), treated consistently (scrim over photos)
@@ -226,6 +228,7 @@ The same discipline applies to everything custom:
 - [ ] Little to no custom CSS, layouts, or components
 
 **Per slide**
+
 - [ ] Big title, minimal support text
 - [ ] Fits one of the standard layouts
 - [ ] ≤ one accent moment
