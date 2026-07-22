@@ -38,6 +38,17 @@ That's the entire configuration. Both decisions are real inputs:
 Suggested accents that read well on both modes:
 `#E5484D` red · `#3B82F6` blue · `#30A46C` green.
 
+### Authoring skill
+
+The theme ships with an opinionated companion skill (`skills/slidev-theme-narrative/SKILL.md`)
+covering *how* to author a narrative deck with it — the three per-deck choices,
+layout and imagery rules, and slide rhythm. Where this README is the reference,
+the skill is the taste layer. Install it into your agent with:
+
+```bash
+npx skills add ricoapon/slidev-theme-narrative
+```
+
 ## Colour tokens
 
 The theme exposes CSS variables you rarely need to touch directly. They react to
