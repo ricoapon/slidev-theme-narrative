@@ -62,7 +62,9 @@
 }
 
 /* ------- statement ---------------------------------------------------------
-   One punchy claim: 3–6 words, centered, nothing else. */
+   One punchy claim: 3–6 words, dead-centre, nothing else. Fully centred text at
+   a size that keeps a short claim on a single line. It differs from `center`
+   (below) by being just the claim — no kicker, no supporting structure. */
 .slidev-layout.mono-statement {
   display: flex;
   flex-direction: column;
@@ -78,13 +80,13 @@
   margin: 0;
 }
 
-.slidev-layout.mono-statement .kicker {
-  margin-bottom: 1rem;
-}
-
 /* ------- center ------------------------------------------------------------
-   Lists, steps, structured info, a data/diagram slide.
-   Content is centered as a block; inner structure may left-align. */
+   Lists, steps, structured info, a data/diagram slide. Genuinely centred — the
+   content block is centred both horizontally and vertically, and its lines are
+   centred too. Lists are the exception: they centre *as a block* while their
+   items stay left-aligned, so markers line up instead of going ragged. It
+   differs from `statement` by carrying real structure (kicker + title + list),
+   and from `default` by sitting centred rather than flowing from the top. */
 .slidev-layout.mono-center {
   display: flex;
   flex-direction: column;
@@ -95,7 +97,15 @@
 }
 
 .slidev-layout.mono-center > * {
+  width: 100%;
   max-width: 56rem;
+}
+
+/* Centre each list as a block while keeping its items left-aligned. */
+.slidev-layout.mono-center ul,
+.slidev-layout.mono-center ol {
+  display: inline-block;
+  text-align: left;
 }
 
 /* ------- image-left / image-right -----------------------------------------

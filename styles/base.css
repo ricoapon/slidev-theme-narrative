@@ -110,15 +110,24 @@ body,
 }
 
 /* Restore list markers (UnoCSS's reset strips them) so plain markdown lists
-   with `-`, `*`, or `1.` render out of the box. Markers use the accent. */
+   with `-`, `*`, or `1.` render out of the box. Markers use the accent.
+   Slidev's defaults make lists `display: table; margin: … auto`, which silently
+   centers them; force a normal left-aligned block so lists follow the slide's
+   text alignment instead. */
+.slidev-layout ul,
+.slidev-layout ol {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1.5rem;
+}
+
 .slidev-layout ul {
   list-style: disc;
-  padding-left: 1.5rem;
 }
 
 .slidev-layout ol {
   list-style: decimal;
-  padding-left: 1.5rem;
 }
 
 .slidev-layout li {
