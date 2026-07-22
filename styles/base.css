@@ -32,7 +32,7 @@
    --slidev-theme-accent is actually visible. */
 body {
   /* One accent per deck. Falls back to the theme default if none is given. */
-  --accent: var(--slidev-theme-accent, #e5484d);
+  --accent: var(--slidev-theme-accent, #3b82f6);
 
   /* Wire Slidev's built-in primary hook to our accent. */
   --slidev-theme-primary: var(--accent);

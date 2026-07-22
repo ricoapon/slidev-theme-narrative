@@ -24,7 +24,7 @@ automatically on first run):
 theme: '@ricoapon/slidev-theme-narrative'
 colorSchema: dark          # or: light
 themeConfig:
-  accent: '#E5484D'        # the one accent for the whole deck
+  accent: '#3B82F6'        # the one accent for the whole deck (this is the default)
 ---
 ```
 
@@ -36,7 +36,7 @@ That's the entire configuration. Both decisions are real inputs:
 | `themeConfig.accent`   | any single hex color (e.g. red / blue / green) |
 
 Suggested accents that read well on both modes:
-`#E5484D` red · `#3B82F6` blue · `#30A46C` green.
+`#3B82F6` blue (default) · `#E5484D` red · `#30A46C` green.
 
 ### Authoring skill
 
