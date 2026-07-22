@@ -1,51 +1,61 @@
 ---
 theme: '@ricoapon/slidev-theme-narrative'
-title: Test
+title: Craft compounds
 colorSchema: light
 themeConfig:
   accent: '#3B82F6'
 layout: cover
-background: https://cover.sli.dev
+background: /image.jpg
 ---
 
-# This is a <u>test</u> page
+# Craft <u>compounds</u>
+
+Small decisions, made well and often, are what people remember.
 
 ---
 layout: image-right
-image: https://cover.sli.dev
+image: /image.jpg
 ---
 
-# I want to explain it
+# Start with the story
 
-* Point 1
-* Point 2
+* Who is this for?
+* What changes for them?
+* Why does it matter now?
 
 ---
 layout: center
 ---
 
-# Here is centered text
+<Kicker>Foundations</Kicker>
+
+# Three things carry a deck
+
+1. A clear through-line
+2. Restraint with color and type
+3. Images that do real work
 
 ---
 layout: statement
 ---
 
-# This is a <u>massive</u> statement!
+# Simplicity is a <u>feature</u>
 
 ---
 layout: image-left
-image: https://cover.sli.dev
+image: /image.jpg
 ---
 
-# Now with list
+# How we get there
 
-1. Point 1
-2. Point 2
+1. Cut the scope
+2. Sharpen the message
+3. Ship, then refine
 
 ---
 
-# Default slide
+# Takeaways
 
-* With
-* Some
-* Text
+* Lead with the narrative, not the features
+* One idea per slide
+* Let the work speak

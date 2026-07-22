@@ -8,6 +8,60 @@ generous whitespace, large confident titles, big full-bleed photography, and a
 only per-deck inputs — choose them, write content, done. No per-deck CSS, layouts,
 or components should be needed.
 
+## Preview
+
+Every layout shown in light and dark mode, with the default blue accent (`#3B82F6`).
+
+<table>
+  <tr>
+    <th width="50%">Light</th>
+    <th width="50%">Dark</th>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><sub><code>cover</code> · <em>identical in light and dark mode</em></sub></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="screenshots/cover.png" alt="cover layout (identical in light and dark)" width="50%" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><sub><code>statement</code></sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="screenshots/statement.png" alt="statement layout, light mode" /></td>
+    <td width="50%"><img src="screenshots/statement-dark.png" alt="statement layout, dark mode" /></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><sub><code>image-left</code></sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="screenshots/image-left.png" alt="image-left layout, light mode" /></td>
+    <td width="50%"><img src="screenshots/image-left-dark.png" alt="image-left layout, dark mode" /></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><sub><code>image-right</code></sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="screenshots/image-right.png" alt="image-right layout, light mode" /></td>
+    <td width="50%"><img src="screenshots/image-right-dark.png" alt="image-right layout, dark mode" /></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><sub><code>center</code></sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="screenshots/center.png" alt="center layout, light mode" /></td>
+    <td width="50%"><img src="screenshots/center-dark.png" alt="center layout, dark mode" /></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><sub><code>default</code></sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="screenshots/default.png" alt="default layout, light mode" /></td>
+    <td width="50%"><img src="screenshots/default-dark.png" alt="default layout, dark mode" /></td>
+  </tr>
+</table>
+
 ## Usage
 
 Install the theme:
