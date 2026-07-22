@@ -10,11 +10,18 @@ or components should be needed.
 
 ## Usage
 
-In a deck living next to this folder, point the headmatter at it:
+Install the theme:
+
+```bash
+npm install @ricoapon/slidev-theme-narrative
+```
+
+Then point your deck's headmatter at it (Slidev will also offer to install it
+automatically on first run):
 
 ```yaml
 ---
-theme: ./theme
+theme: '@ricoapon/slidev-theme-narrative'
 colorSchema: dark          # or: light
 themeConfig:
   accent: '#E5484D'        # the one accent for the whole deck

@@ -1,5 +1,5 @@
 {
-  "name": "slidev-theme-narrative",
+  "name": "@ricoapon/slidev-theme-narrative",
   "version": "1.0.0",
   "type": "module",
   "description": "A monochrome, one-accent, photography-forward Slidev theme. Dark or light mode and the accent colour are configurable inputs — choose mode + accent, write content, done.",
