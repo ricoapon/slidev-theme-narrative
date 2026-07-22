@@ -11,6 +11,19 @@
     "editorial"
   ],
   "license": "MIT",
+  "author": "Rico Apon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricoapon/slidev-theme-narrative.git"
+  },
+  "homepage": "https://github.com/ricoapon/slidev-theme-narrative#readme",
+  "bugs": "https://github.com/ricoapon/slidev-theme-narrative/issues",
+  "files": [
+    "layouts",
+    "components",
+    "styles",
+    "utils"
+  ],
   "engines": {
     "slidev": ">=0.48.0"
   },
