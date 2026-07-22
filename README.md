@@ -92,8 +92,6 @@ in the deck's own `components/` folder, not here.
 
 ## Utilities
 
-- `class: abstract-bg` on a slide — a subtle accent-tinted abstract background
-  (auto-derived from the chosen mode + accent). One background treatment per deck.
 - `.kicker`, `.accent`, `.muted` helper classes.
 - Markdown ordered lists (`1.` / `2.`) render with accent numerals out of the box,
   so simple numbered takeaways need no component.

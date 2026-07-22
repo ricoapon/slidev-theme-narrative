@@ -188,35 +188,3 @@ body,
   color: var(--text-secondary);
   text-decoration-color: var(--hairline);
 }
-
-/* =============================================================================
-   The reusable abstract background (style guide §7).
-   Driven by --bg + --accent, so changing mode/accent restyles it automatically.
-   Opt in per slide with `class: abstract-bg`, or via the theme's layouts.
-   ========================================================================== */
-
-.abstract-bg {
-  background-color: var(--bg);
-  background-image:
-    radial-gradient(60% 60% at 15% 20%,
-      color-mix(in oklab, var(--accent) 22%, transparent) 0%, transparent 60%),
-    radial-gradient(50% 50% at 85% 78%,
-      color-mix(in oklab, var(--accent) 14%, transparent) 0%, transparent 55%);
-  position: relative;
-}
-
-/* Optional fine grain so the gradients don't look flat. */
-.abstract-bg::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.04;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-
-/* Keep slide content above the abstract grain. */
-.abstract-bg > * {
-  position: relative;
-  z-index: 1;
-}

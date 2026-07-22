@@ -64,8 +64,12 @@ Everything below is the detail behind these four.
 decoration. Concretely that means a monochrome surface (mostly black/white/gray),
 generous whitespace, large confident titles, and a single accent color
 appearing as small touches — an underline, a highlighted word, the active
-element of a diagram. Optionally a subtle abstract background tinted with the
-accent (see §7). The overall impression should be sleek and intentional.
+element of a diagram. The overall impression should be sleek and intentional.
+
+Deliberately, there is **no decorative background**. A picture-less slide earns
+its interest from the title and the whitespace around it, not from an abstract
+graphic. Visual interest comes from photography or from restraint — never from
+ornament layered behind the content.
 
 **It is not:**
 - **Dense, text-heavy, dated slides** — bullet lists stacked to the edges, small
@@ -189,14 +193,15 @@ venue, so confirm it once per deck:
 
 ---
 
-## 7. The abstract background & custom work — reuse, don't reinvent
+## 7. Custom work — reuse, don't reinvent
 
-For content-heavy or light-mode slides, the theme ships a subtle abstract,
-accent-tinted background. **Opt in with `class: abstract-bg`** on the slide —
-don't hand-roll one. It reads the deck's mode + accent automatically, so
-changing the accent restyles it with nothing to redraw. Keep it subtle: it
-lives *behind* content and must never compete with it. One background treatment
-per deck.
+The theme has **no decorative or abstract background**, by design. A picture-less
+slide (`statement`, `center`, `default`) is meant to breathe: a big title in
+open space is the finished look, not a slide waiting for ornament. If such a
+slide feels bare, the fix is a sharper title, a `statement` treatment, or a
+full-bleed photo — not a graphic layered behind the text. Decoration and
+photography are alternatives, never companions: a photo slide already has its
+visual interest, and a text slide's interest is the whitespace.
 
 The same discipline applies to everything custom:
 
@@ -215,7 +220,7 @@ The same discipline applies to everything custom:
 **Per deck**
 - [ ] Mode (dark/light) and one accent chosen up front
 - [ ] Local-first decision confirmed for the venue
-- [ ] Images sourced (Unsplash by default), treated consistently (scrim / one abstract bg)
+- [ ] Images sourced (Unsplash by default), treated consistently (scrim over photos)
 - [ ] No slide is a wall of text
 - [ ] Cover / statement slides break up the text slides (good rhythm)
 - [ ] Little to no custom CSS, layouts, or components

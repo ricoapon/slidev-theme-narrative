@@ -22,7 +22,6 @@ image: https://cover.sli.dev
 
 ---
 layout: center
-class: abstract-bg
 ---
 
 # Here is centered text
