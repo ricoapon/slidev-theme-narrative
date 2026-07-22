@@ -18,7 +18,7 @@ Every layout shown in light and dark mode, with the default blue accent (`#3B82F
     <th width="50%">Dark</th>
   </tr>
   <tr>
-    <td align="center" colspan="2"><sub><code>cover</code> · <em>identical in light and dark mode</em></sub></td>
+    <td align="center" colspan="2"><sub><code>cover</code> (identical in light and dark mode)</sub></td>
   </tr>
   <tr>
     <td colspan="2" align="center">
