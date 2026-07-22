@@ -9,7 +9,7 @@
   font-feature-settings: 'zero';
 }
 
-/* Inline code — a subtle chip, not a colour accent. */
+/* Inline code — a subtle chip, not a color accent. */
 .slidev-layout :not(pre) > code {
   background: var(--bg-alt);
   border: 1px solid var(--hairline);

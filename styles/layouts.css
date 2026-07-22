@@ -20,7 +20,7 @@
   overflow: hidden;
 }
 
-/* The photo lives on its own layer so `grayscale` filters only the image. */
+/* The photo lives on its own layer, beneath the scrim and the content. */
 .slidev-layout.mono-cover .mono-cover__bg {
   position: absolute;
   inset: 0;
@@ -59,11 +59,6 @@
 
 .slidev-layout.mono-cover .kicker {
   color: rgba(255, 255, 255, 0.75);
-}
-
-/* Optional desaturation unifier for mixed-source photos: `class: grayscale`. */
-.slidev-layout.mono-cover.grayscale .mono-cover__bg {
-  filter: grayscale(1);
 }
 
 /* ------- statement ---------------------------------------------------------
@@ -127,9 +122,4 @@
   justify-content: center;
   padding: 3.5rem 3rem;
   min-width: 0;
-}
-
-/* Optional desaturation unifier: add `class: grayscale`. */
-.slidev-layout.mono-split.grayscale .mono-split__media {
-  filter: grayscale(1);
 }

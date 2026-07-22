@@ -86,7 +86,8 @@ body,
 }
 
 .slidev-layout h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  line-height: 1.25;
   font-weight: 600;
   color: var(--text);
   margin: 0 0 0.5rem;

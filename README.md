@@ -2,9 +2,9 @@
 
 A monochrome, one-accent, photography-forward [Slidev](https://sli.dev) theme.
 
-The whole style is one durable system: a monochrome surface (black / white / grey),
+The whole style is one durable system: a monochrome surface (black / white / gray),
 generous whitespace, large confident titles, big full-bleed photography, and a
-**single** accent colour used sparingly. Mode (dark/light) and the accent are the
+**single** accent color used sparingly. Mode (dark/light) and the accent are the
 only per-deck inputs — choose them, write content, done. No per-deck CSS, layouts,
 or components should be needed.
 
@@ -33,7 +33,7 @@ That's the entire configuration. Both decisions are real inputs:
 | Input                  | Values                                    |
 | ---------------------- | ----------------------------------------- |
 | `colorSchema`          | `dark` (cinematic) · `light` (airy)       |
-| `themeConfig.accent`   | any single hex colour (e.g. red / blue / green) |
+| `themeConfig.accent`   | any single hex color (e.g. red / blue / green) |
 
 Suggested accents that read well on both modes:
 `#E5484D` red · `#3B82F6` blue · `#30A46C` green.
@@ -49,7 +49,7 @@ the skill is the taste layer. Install it into your agent with:
 npx skills add ricoapon/slidev-theme-narrative
 ```
 
-## Colour tokens
+## Color tokens
 
 The theme exposes CSS variables you rarely need to touch directly. They react to
 mode and accent automatically:
@@ -69,14 +69,19 @@ All five are drop-in — no custom layouts required in a deck.
 
 | Layout        | For…                                                | Frontmatter        |
 | ------------- | --------------------------------------------------- | ------------------ |
-| `cover`       | Title, section breaks, mood moments                 | `background: /x.jpg` (+ `class: grayscale`) |
+| `cover`       | Title, section breaks, mood moments                 | `background: /x.jpg` |
 | `statement`   | One punchy claim (3–6 words)                         | —                  |
 | `center`      | Lists, steps, structured info, diagrams             | —                  |
-| `image-left`  | A concept anchored to a photo                        | `image: /x.jpg` (+ `class: grayscale`) |
+| `image-left`  | A concept anchored to a photo                        | `image: /x.jpg`    |
 | `image-right` | Mirror of `image-left` — alternate L/R               | `image: /x.jpg`    |
 | `default`     | Plain padded content                                 | —                  |
 
 Covers apply a scrim automatically so light titles stay readable over any photo.
+
+The photo frontmatter (`background:` / `image:`) accepts either a **local path**
+served from `public/` (`background: /cover.jpg`) or a **remote URL**
+(`background: https://cover.sli.dev`). Local paths are rebased onto the deck's
+base URL so they survive being served from a sub-path; URLs are used as-is.
 
 ## Components
 
